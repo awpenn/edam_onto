@@ -12,7 +12,7 @@
     - make changes to `index.html` in `edam-browser` directory to effect change in launched portal.
 
 # Possible design
-    - each phenotype described in hierachy as expected, with URI being link to phenotype page created as part of an application (likey React) in which I believe the browser application could be embedded/encapsulated by. This would further link to study/dataset/etc. description pages in dss.niagads or wherever else. 
+    - each phenotype described in hierachy as expected, with URI being link to phenotype page created as part of an \ application (likey React) in which I believe the browser application could be embedded/encapsulated by. This would \ further link to study/dataset/etc. description pages in dss.niagads or wherever else. 
 
 # still to figure out
     - how to change text of root node to not be `EDAM` (not in edam_extended.json onto schema)
