@@ -20,3 +20,17 @@
 
 # still to figure out
     - how to change text of root node to not be `EDAM` (not in edam_extended.json onto schema)
+
+# Inclusion in node application
+- clone edam-browser (or whatever the name is that holds the browser app files) into the root of nodejs (or wherever)
+- import {PythonShell} from 'python-shell' (npm install beforehand)
+- find directions for using Babel to compile for ES6 (wont have to do if using in react-app?)
+	- be sure to include build script in package.json and call build in "start" script before running main app
+- python-shell runs python3, so have to change start-edam-browser-whatever.py start script to reflect this
+        import http.server
+        import socketserver
+        Handler = http.server.SimpleHTTPRequestHandler
+
+        httpd = socketserver.TCPServer(("", PORT), Handler)
+
+- run script and vis browser will be at localhost:20080/edam-browser
